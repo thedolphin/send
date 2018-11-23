@@ -1,0 +1,8 @@
+# python -c 'import uuid; import pprint; pprint.pprint(uuid.uuid4().bytes)'
+SECRET_KEY = '<place your secret here>'
+
+UPLOAD_FOLDER = 'storage'
+
+MAX_CONTENT_LENGTH = 32 * 1024 * 1024
+
+BASE_URL = '<your url here>'

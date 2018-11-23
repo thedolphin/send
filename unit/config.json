@@ -1,0 +1,19 @@
+{
+    "listeners": {
+        "*:80": {
+            "application": "send-app"
+        }
+    },
+    "applications": {
+        "send-app": {
+            "type": "python",
+            "processes": 5,
+            "working_directory": "/var/lib/send",
+            "path": "/var/www/send",
+            "home": "/opt/send-venv/",
+            "module": "app",
+            "user": "send",
+            "group": "send"
+        }
+    }
+}
